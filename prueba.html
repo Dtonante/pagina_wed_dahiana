@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Automático</title>
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+  <div class="owl-carousel">
+    <div class="item">
+      <img src="img/carousel-1.jpg" alt="Cardiology">
+      <h1 class="text-white">Cardiology</h1>
+    </div>
+    <div class="item">
+      <img src="img/carousel-2.jpg" alt="Neurology">
+      <h1 class="text-white">Neurology</h1>
+    </div>
+    <div class="item">
+      <img src="img/carousel-3.jpg" alt="Pulmonary">
+      <h1 class="text-white">Pulmonary</h1>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false,
+        dots: true,
+      });
+    });
+  </script>
+</body>
+</html>
