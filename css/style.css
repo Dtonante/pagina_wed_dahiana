@@ -253,6 +253,22 @@
     color: var(--light);
 }
 
+/* Estilo de las imágenes del carrusel */
+.owl-carousel-item {
+    overflow: hidden;
+}
+
+.header-carousel .owl-carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.header-carousel .owl-carousel-item:hover img {
+    transform: scale(1.1);
+}
+
 
 /*** Service ***/
 .service-item {
